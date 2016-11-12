@@ -18,3 +18,5 @@ $lib->addBook('Sherlock', 'Conan', 1876);
 $lib->addBook('Bennet', 'Austin', 1755);
 
 $lib->giveBook('Bennet', 'kate');
+
+echo "Hello, it`s with tests! and Phing! <br> <h1>Make love, not war</h1>";
