@@ -48,4 +48,10 @@ class UserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('User not found', $result); 
     }
     
+    public function testAddUser() 
+    { 
+        $result = $this->user->addUser('maru123', 'John Smith'); 
+        $this->assertTrue($result); 
+    } 
+    
 }
