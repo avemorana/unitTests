@@ -28,6 +28,13 @@ class UserTest extends PHPUnit_Framework_TestCase
         $result = $this->user->getUserByLogin('max');
         $this->assertEquals('Maxim Maximov', $result);
     }
+    
+    
+    public function testGetUserByName()
+    {
+        $result = $this->user->getUserByName('Liza Lizova');
+        $this->assertEquals('User not found', $result);
+    }
 
 
 
