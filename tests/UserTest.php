@@ -44,15 +44,4 @@ class UserTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($this->users, $result);
     }
     
-    public function testDeleteBook() 
-    { 
-        $lib = $this->getMockBuilder('Library') 
-        ->getMock(); 
-
-        $lib->expects($this->once()) 
-        ->method('deleteBook') 
-        ->will($this->returnValue(true)); 
-
-        $this->assertTrue($lib->deleteBook('Sherlock')); 
-    }
 }
