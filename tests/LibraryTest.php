@@ -43,5 +43,16 @@ class LibraryTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($lib->giveBook('Sherlock', 'kate'));
     }
 
+    public function testDeleteBook() 
+    { 
+        $lib = $this->getMockBuilder('Library') 
+        ->getMock(); 
+
+        $lib->expects($this->once()) 
+        ->method('deleteBook') 
+        ->will($this->returnValue(true)); 
+
+        $this->assertTrue($lib->deleteBook('Sherlock')); 
+    }
 
 }
