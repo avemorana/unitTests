@@ -35,13 +35,17 @@ class UserTest extends PHPUnit_Framework_TestCase
         $result = $this->user->getUserByName('Liza Lizova');
         $this->assertEquals('User not found', $result);
     }
-
-
-
+  
     public function testGetUsers()
     {
         $result = $this->user->getUsers();
         $this->assertEquals($this->users, $result);
+    }
+      
+    public function testDeleteUser() 
+    { 
+        $result = $this->user->deleteUser('batman'); 
+        $this->assertEquals('User not found', $result); 
     }
     
 }
