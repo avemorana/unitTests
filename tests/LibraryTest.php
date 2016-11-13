@@ -43,11 +43,5 @@ class LibraryTest extends PHPUnit_Framework_TestCase
         $this->assertTrue($lib->giveBook('Sherlock', 'kate'));
     }
 
-    public function testDeleteUser() 
-    { 
-        $result = $this->user->deleteUser('batman'); 
-        $this->assertEquals('User not found', $result); 
-    }
-
 
 }
