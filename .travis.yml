@@ -2,5 +2,5 @@ language: php
 php:
   - 7.0
 script: 
-  - phpunit test/LibraryTest.php
-  - phpunit test/UserTest.php
+  - phpunit tests/LibraryTest.php
+  - phpunit tests/UserTest.php
