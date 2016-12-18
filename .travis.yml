@@ -4,3 +4,6 @@ php:
 script: 
   - phpunit tests/LibraryTest.php
   - phpunit tests/UserTest.php
+sudo: required
+services:
+  - docker
