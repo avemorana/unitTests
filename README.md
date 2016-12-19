@@ -1,4 +1,4 @@
-# kpi-integration lab3 [![Build Status](https://travis-ci.org/anashur33/unitTests.svg?branch=master)](https://travis-ci.org/anashur33/unitTests)
+# kpi-integration lab4 [![Build Status](https://travis-ci.org/anashur33/unitTests.svg?branch=master)](https://travis-ci.org/anashur33/unitTests)
 
 ## Для коректної роботи програми: 
   * встановлений локальний сервер
