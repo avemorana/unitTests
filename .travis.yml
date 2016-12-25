@@ -4,6 +4,7 @@ php:
 script: 
   - phpunit tests/UserTest.php
   - phpunit tests/LibraryTest.php
+  - phing build.xml
 sudo: required
 services:
   - docker
