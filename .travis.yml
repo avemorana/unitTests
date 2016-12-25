@@ -8,7 +8,7 @@ before_install:
 script: 
   - phpunit tests/UserTest.php
   - phpunit tests/LibraryTest.php
-  - phing -f build.xml phplint
+  - phing -f build.xml
 sudo: required
 services:
   - docker
