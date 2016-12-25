@@ -1,10 +1,14 @@
 language: php
 php:
   - 7.0
+before_install:
+  - pear channel-discover pear.phing.info
+  - pear install phing/phing
+  - phpenv rehash
 script: 
   - phpunit tests/UserTest.php
   - phpunit tests/LibraryTest.php
-  - phing build.xml
+  - phing -f build.xml phplint
 sudo: required
 services:
   - docker
