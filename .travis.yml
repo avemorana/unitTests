@@ -2,8 +2,7 @@ language: php
 php:
   - 7.0
 script: 
-  - phpunit tests/LibraryTest.php
-  - phpunit tests/UserTest.php
+  - phpunit tests/*Test.php
 sudo: required
 services:
   - docker
